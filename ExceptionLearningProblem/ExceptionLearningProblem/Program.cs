@@ -8,7 +8,8 @@ namespace ExceptionLearningProblem
         {
             Console.WriteLine("Welcome To Exception Learning Problem");
             TypeOfExceptions.TestIndexOutOfRangeException();
+            TypeOfExceptions.TestNullReferenceException();
             Console.ReadLine();
         }
     }
-}
+} 

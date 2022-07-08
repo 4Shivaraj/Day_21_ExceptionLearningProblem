@@ -24,5 +24,21 @@ namespace ExceptionLearningProblem
                 Console.WriteLine(ex);
             }
         }
+        public static void TestNullReferenceException()
+        {
+            try
+            {
+                string name = null;
+                int count = name.Length;
+            }
+            catch (NullReferenceException ex)  //Default Exception
+            {
+                Console.WriteLine(ex);
+            }
+            catch (Exception ex)                 //Parent Exception
+            {
+                Console.WriteLine(ex);
+            }
+        }
     }
 }
